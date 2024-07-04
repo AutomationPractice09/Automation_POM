@@ -1,0 +1,12 @@
+package swagLabs02_Tests;
+
+import org.testng.annotations.Test;
+
+public class A02_InventoryTest extends A00_BaseClass
+{
+  @Test
+  public void getCount() 
+  {
+	  
+  }
+}

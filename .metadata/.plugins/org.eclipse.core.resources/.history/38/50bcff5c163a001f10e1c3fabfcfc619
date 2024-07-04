@@ -1,0 +1,20 @@
+package swagLabs01_Pages;
+
+import org.openqa.selenium.WebDriver;
+
+public class A03_CartPage 
+{
+	
+	private WebDriver driver;
+	
+	//initialize browser
+	public A03_CartPage(WebDriver driver)
+	{
+		this.driver = driver;
+	}
+	
+	
+	//private data/locator
+	private 
+
+}

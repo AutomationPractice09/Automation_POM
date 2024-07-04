@@ -1,0 +1,34 @@
+package swagLabs01_Pages;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class A02_InventoryPage 
+{
+	
+	private WebDriver driver;
+	
+	//initialize browser
+	public A02_InventoryPage(WebDriver driver)
+	{
+		this.driver = driver;
+	}
+	
+	
+	//private locators/data
+	private By item = By.xpath("//div[@class='inventory_list']//div[@class='inventory_item_description']");
+	private By addCart = By.id("add-to-cart");
+	
+	
+	//public methods
+	public void getCount()
+	{
+		List<WebElement> ele = driver.findElements(item);
+		int count = ele.size();
+		System.out.println(count);
+	}
+
+}

@@ -1,0 +1,18 @@
+package swagLabs01_Pages;
+
+import org.openqa.selenium.WebDriver;
+
+public class A01_LoginPage 
+{
+	
+	private WebDriver driver;
+	
+	//initialize browser
+	public A01_LoginPage(WebDriver driver)     //this driver comes from base class
+	{
+		this.driver = driver;
+	}
+
+	
+	
+}

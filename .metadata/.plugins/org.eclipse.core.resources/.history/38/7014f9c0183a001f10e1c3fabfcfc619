@@ -1,0 +1,32 @@
+package swagLabs02_Tests;
+
+import org.testng.annotations.Test;
+
+public class A03_CartTest extends A00_BaseClass
+{
+  @Test
+  public void prodDesc() 
+  {
+	 cp.prodDesc(); 
+  }
+  
+  @Test
+  public void remProd() 
+  {
+	  cp.remProd();
+  }
+  
+  @Test
+  public void continueShop() 
+  {
+	  cp.continueShop();
+	  ip.addToCart("Sauce Labs Fleece Jacket");
+	  ip.cartPage();
+  }
+  
+  @Test
+  public void checkoutPro() 
+  {
+	  cp.checkoutPro();
+  }
+}
