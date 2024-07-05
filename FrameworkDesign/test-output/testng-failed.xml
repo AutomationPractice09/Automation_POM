@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="cartPage(failed)">
+  <test thread-count="5" name="overviewTest(failed)">
     <classes>
-      <class name="swagLabs02_Tests.A03_CartTest">
+      <class name="swagLabs02_Tests.A05_OverviewTest">
         <methods>
-          <include name="prodDesc"/>
-          <include name="pagesetup"/>
           <include name="setupBrow"/>
           <include name="tearDown"/>
+          <include name="pageSetup"/>
+          <include name="finish"/>
         </methods>
-      </class> <!-- swagLabs02_Tests.A03_CartTest -->
+      </class> <!-- swagLabs02_Tests.A05_OverviewTest -->
     </classes>
-  </test> <!-- cartPage(failed) -->
+  </test> <!-- overviewTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

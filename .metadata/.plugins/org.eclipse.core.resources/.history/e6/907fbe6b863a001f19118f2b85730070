@@ -1,0 +1,24 @@
+package swagLabs02_Tests;
+
+import org.testng.annotations.Test;
+
+public class A04_CheckoutTest 
+{
+  @Test(priority=1)
+  public void checkTitle() 
+  {
+	  
+  }
+  
+  @Test(priority=1)
+  public void cancelCheckout() 
+  {
+	  
+  }
+  
+  @Test(priority=1)
+  public void continueCheckout() 
+  {
+	  
+  }
+}

@@ -14,6 +14,8 @@ public class A00_BaseClass
 	public A01_LoginPage lp;
 	public A02_InventoryPage ip;
 	public A03_CartPage cp;
+	public A04_CheckoutPage co;
+	public A05_OverviewPage op;
 	
 	@BeforeTest
 	public void setupBrow()
@@ -24,6 +26,8 @@ public class A00_BaseClass
 		lp = new A01_LoginPage(driver);
 		ip = new A02_InventoryPage(driver);
 		cp = new A03_CartPage(driver);
+		co = new A04_CheckoutPage(driver);
+		op = new A05_OverviewPage(driver);
 	}
 	
 	

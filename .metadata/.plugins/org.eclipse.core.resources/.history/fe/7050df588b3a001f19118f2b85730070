@@ -1,0 +1,32 @@
+package swagLabs02_Tests;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+public class A05_OverviewTest extends A00_BaseClass
+{
+	
+	@BeforeClass
+	public void pageSetup()
+	{
+		
+	}
+	
+  @Test(priority = 1)
+  public void getDetails() 
+  {
+	  
+  }
+  
+  @Test(priority = 2)
+  public void cancelOrder() 
+  {
+	  
+  }
+  
+  @Test(priority = 3)
+  public void finish() 
+  {
+	  
+  }
+}
