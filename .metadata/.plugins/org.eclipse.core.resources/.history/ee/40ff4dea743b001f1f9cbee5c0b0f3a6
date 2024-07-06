@@ -1,0 +1,15 @@
+package orangeHRM_PageFactory;
+
+import org.openqa.selenium.WebDriver;
+
+public class A01_LoginPage 
+{
+	
+	private WebDriver driver;
+	
+	public A01_LoginPage(WebDriver driver)
+	{
+		this.driver = driver;
+	}
+
+}

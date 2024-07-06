@@ -1,0 +1,9 @@
+package orangeHRM_PageFactory;
+
+import org.testng.annotations.Test;
+
+public class A02_LoginTest {
+  @Test
+  public void f() {
+  }
+}
