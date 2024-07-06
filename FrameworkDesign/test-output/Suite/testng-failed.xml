@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="checkoutPage(failed)">
+    <classes>
+      <class name="swagLabs02_Tests.A04_CheckoutTest">
+        <methods>
+          <include name="checkTitle"/>
+          <include name="cancelCheckout"/>
+          <include name="setupBrow"/>
+          <include name="tearDown"/>
+          <include name="pageSetup"/>
+          <include name="continueCheckout"/>
+        </methods>
+      </class> <!-- swagLabs02_Tests.A04_CheckoutTest -->
+    </classes>
+  </test> <!-- checkoutPage(failed) -->
   <test thread-count="5" name="overviewTest(failed)">
     <classes>
       <class name="swagLabs02_Tests.A05_OverviewTest">
@@ -8,6 +22,7 @@
           <include name="setupBrow"/>
           <include name="tearDown"/>
           <include name="pageSetup"/>
+          <include name="getDetails"/>
           <include name="finish"/>
         </methods>
       </class> <!-- swagLabs02_Tests.A05_OverviewTest -->

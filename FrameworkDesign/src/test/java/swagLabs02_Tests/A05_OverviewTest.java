@@ -9,11 +9,11 @@ public class A05_OverviewTest extends A00_BaseClass
 	@BeforeClass
 	public void pageSetup()
 	{
-		lp.login("standard_user", "secret_sauce");
-		ip.addToCart("Sauce Labs Fleece Jacket");
+		lp.login(pr.getData("un"),pr.getData("pwd"));
+		ip.addToCart(pr.getData("product1"));
 		ip.cartPage();
 		cp.checkoutPro();
-		co.continuecheck("Digvijay", "Patil", "987456");
+		co.continuecheck(pr.getData("fname"),pr.getData("lname"),pr.getData("zip"));
 	}
 	
   @Test(priority = 1)

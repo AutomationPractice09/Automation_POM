@@ -5,6 +5,8 @@ import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
+
+import swagLabs00_Utility.A01_PropertiesFile;
 import swagLabs01_Pages.*;
 
 public class A00_BaseClass 
@@ -16,13 +18,15 @@ public class A00_BaseClass
 	public A03_CartPage cp;
 	public A04_CheckoutPage co;
 	public A05_OverviewPage op;
+	public A01_PropertiesFile pr;
 	
 	@BeforeTest
 	public void setupBrow()
 	{
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get("https://www.saucedemo.com/");
+		pr = new A01_PropertiesFile("config");
+		driver.get(pr.getData("url"));	
 		lp = new A01_LoginPage(driver);
 		ip = new A02_InventoryPage(driver);
 		cp = new A03_CartPage(driver);

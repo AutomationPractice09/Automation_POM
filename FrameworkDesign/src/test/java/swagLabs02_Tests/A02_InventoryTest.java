@@ -8,7 +8,7 @@ public class A02_InventoryTest extends A00_BaseClass
 	@BeforeClass
 	public void pagesetup()
 	{
-		lp.login("standard_user", "secret_sauce");
+		lp.login(pr.getData("un"),pr.getData("pwd"));
 	}
 	
   @Test(priority = 1)
@@ -26,7 +26,7 @@ public class A02_InventoryTest extends A00_BaseClass
   @Test(priority = 3)
   public void addCart() 
   {
-	  ip.addToCart("Sauce Labs Fleece Jacket");
+	  ip.addToCart(pr.getData("product1"));
   }
   
   @Test(priority = 4)

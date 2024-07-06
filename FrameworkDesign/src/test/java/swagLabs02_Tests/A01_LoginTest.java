@@ -24,7 +24,7 @@ public class A01_LoginTest extends A00_BaseClass
   @Test(priority=3)
   public void login() 
   {
-	  String pgurl = lp.login("standard_user", "secret_sauce");
+	  String pgurl = lp.login(pr.getData("un"),pr.getData("pwd"));
 	  Assert.assertTrue(pgurl.contains("inventory"),"TC is failed");
 	  System.out.println("TC is Passed");
   }

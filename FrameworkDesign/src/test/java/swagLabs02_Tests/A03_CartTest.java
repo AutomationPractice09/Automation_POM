@@ -8,8 +8,8 @@ public class A03_CartTest extends A00_BaseClass
 	@BeforeClass
 	public void pagesetup()
 	{
-		lp.login("standard_user", "secret_sauce");
-		ip.addToCart("Sauce Labs Fleece Jacket");
+		lp.login(pr.getData("un"),pr.getData("pwd"));
+		ip.addToCart(pr.getData("product1"));
 		ip.cartPage();
 	}
 	
@@ -29,7 +29,7 @@ public class A03_CartTest extends A00_BaseClass
   public void continueShop() 
   {
 	  cp.continueShop();
-	  ip.addToCart("Sauce Labs Fleece Jacket");
+	  ip.addToCart(pr.getData("product2"));
 	  ip.cartPage();
   }
   
