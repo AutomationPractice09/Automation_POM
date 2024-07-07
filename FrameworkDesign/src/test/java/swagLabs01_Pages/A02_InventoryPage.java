@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
+import swagLabs00_Utility.A02_Screenshots;
+
 public class A02_InventoryPage 
 {
 	
@@ -67,6 +69,7 @@ public class A02_InventoryPage
 		
 		driver.findElement(addCart).click();
 		System.out.println(product+" is added to cart");
+		A02_Screenshots.screenshot(driver, "Screenshots","addCart2");
 	}
 
 	

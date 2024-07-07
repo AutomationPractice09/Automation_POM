@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
+import swagLabs00_Utility.A02_Screenshots;
+
 public class A03_CartPage 
 {
 	
@@ -33,6 +35,7 @@ public class A03_CartPage
 	public void remProd()
 	{
 		driver.findElement(remove).click();
+		A02_Screenshots.screenshot(driver,"Screenshots","remove3");
 		System.out.println("Product is Removed");
 	}
 	
@@ -46,6 +49,7 @@ public class A03_CartPage
 	{
 		driver.findElement(checkout).click();
 		
+		A02_Screenshots.screenshot(driver,"Screenshots","checkout4");
 		Assert.assertTrue(driver.getCurrentUrl().contains("checkout"),"TC is failed");
 		System.out.println("Landed on Checkout Page");
 	}

@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
+import swagLabs00_Utility.A02_Screenshots;
+
 public class A05_OverviewPage 
 {
 	
@@ -42,6 +44,7 @@ public class A05_OverviewPage
 		String head = driver.findElement(heading).getText();
 		Assert.assertTrue(head.contains("Thank you"),"TC is Failed as heading is not matching");
 		System.out.println(head);
+		A02_Screenshots.screenshot(driver,"Screenshots","finish5");
 		System.out.println("TC is Passed as Heading is Matching");
 	}
 
