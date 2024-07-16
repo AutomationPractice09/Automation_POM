@@ -1,9 +1,0 @@
-package swagLabs02_Tests;
-
-import org.testng.annotations.Test;
-
-public class A01_LoginTest {
-  @Test
-  public void f() {
-  }
-}

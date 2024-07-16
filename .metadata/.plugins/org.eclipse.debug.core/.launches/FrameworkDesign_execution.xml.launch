@@ -5,7 +5,7 @@
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="FrameworkDesign"/>
     <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
     <listAttribute key="org.testng.eclipse.SUITE_TEST_LIST">
-        <listEntry value="C:\Users\hp\Desktop\Automation Class\Automation_POM\FrameworkDesign\execution.xml"/>
+        <listEntry value="C:\Users\hp\Desktop\AutomationClass\Automation_POM\FrameworkDesign\execution.xml"/>
     </listAttribute>
     <intAttribute key="org.testng.eclipse.TYPE" value="3"/>
 </launchConfiguration>
